@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
-    "build": "gatsby build",
+    "now-build": "gatsby build",
     "clean-cache": "gatsby clean",
-    "dev": "npm run clean-cache && gatsby develop",
+    "now-dev": "yarn clean-cache && gatsby develop --port $PORT",
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
